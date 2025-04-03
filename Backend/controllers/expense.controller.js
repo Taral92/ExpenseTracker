@@ -25,13 +25,13 @@ const getallexpense = async (req, res) => {
   try {
     const userid = req.userId;
     const query = {
-      userid, //filter by id
+      userid, 
     };
     const category = req.query.category || "";
     const done = req.query.done || "";
 
     if (category.toLowerCase() === "all") {
-      // no need to filter
+      
     } else {
       query.category = { $regex: new RegExp(category, "i") };
     }
