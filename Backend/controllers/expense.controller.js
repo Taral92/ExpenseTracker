@@ -61,7 +61,7 @@ const markasdone = async (req, res) => {
 const removeexpense=async (req,res)=>{
          const expenseid=req.params.id
          await expenseschema.findByIdAndDelete(expenseid)
-         return res.ststus(200).json({
+         return res.status(200).json({
             message:'expense removed',
             success:true
          })
@@ -72,7 +72,7 @@ const updateexpense=async(req,res)=>{
        const expenseid=req.params.id
        const updatedata={description,amount,category}
        const expense=await expenseschema.findByIdAndUpdate(expenseid,updatedata,{new:true})
-       return res.ststus(200).json({
+       return res.status(200).json({
         message:'expense updated',
         expense,
         success:true
