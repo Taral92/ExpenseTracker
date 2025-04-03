@@ -24,5 +24,6 @@ const ExpenseSchema=new mongoose.Schema({
 
 },{timestamps:true}
 )
-mongoose.model('expense',ExpenseSchema)
-module.exports=ExpenseSchema 
+const expense=mongoose.model('expense',ExpenseSchema)
+
+module.exports=expense
