@@ -1,0 +1,32 @@
+{
+  "name": "expensetracker",
+  "version": "1.0.0",
+  "description": "expense",
+  "license": "ISC",
+  "author": "Taral",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "x": "nodemon server.js",
+    "start": "nodemon sever.js",
+    "test": ""
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.1",
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/jest": "^29.5.14",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/mongoose": "^5.11.96"
+  }
+}
